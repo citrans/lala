@@ -2,8 +2,11 @@ package com.example.citra.projek_konveksi;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.EditText;
 
 public class login extends AppCompatActivity {
+
+    private EditText username,password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

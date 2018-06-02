@@ -1,41 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
+    android:orientation="vertical"
     tools:context="com.example.citra.projek_konveksi.login">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="101dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="117dp"
-        android:text="Username" />
+        app:srcCompat="@drawable/logo__1_"/>
 
-    <EditText
-        android:id="@+id/etUsername"
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp" />
+        app:passwordToggleEnabled="true">
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="228dp"
-        android:text="Password" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="244dp"
-        android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:background="@drawable/background_login_two"
@@ -44,7 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="145dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
         android:text="Login" />
 
     <TextView
@@ -56,14 +65,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="116dp"
         android:text="Register Here"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold" />
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="101dp"
-        android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/logo__1_"/>
-
-</RelativeLayout>
+</LinearLayout>
