@@ -28,7 +28,7 @@ public class tampil extends AppCompatActivity {
         txt_username = (TextView) findViewById(R.id.txt_username);
         btn_logout = (Button) findViewById(R.id.btn_logout);
 
-        sharedpreferences = getSharedPreferences(login.my_shared_preferences, Context.MODE_PRIVATE);
+        sharedpreferences = getSharedPreferences(login.my_shared_preference, Context.MODE_PRIVATE);
 
         id = getIntent().getStringExtra(TAG_ID);
         username = getIntent().getStringExtra(TAG_USERNAME);
@@ -48,7 +48,7 @@ public class tampil extends AppCompatActivity {
                 editor.putString(TAG_USERNAME, null);
                 editor.commit();
 
-                Intent intent = new Intent(MainActivity.this, login.class);
+                Intent intent = new Intent(tampil.this, login.class);
                 finish();
                 startActivity(intent);
             }

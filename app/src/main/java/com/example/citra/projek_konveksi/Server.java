@@ -5,5 +5,5 @@ package com.example.citra.projek_konveksi;
  */
 
 public class Server {
-    public static final String URL = "https://konveksiiyanjaya.000webhostapp.com/";
+    public static final String URL = "https://konveksiiyanjaya.000webhostapp.com/android/";
 }
